@@ -34,6 +34,7 @@ There are two Algorithms used to make a path.
 #### Depth-First Search (DFS)
 This is a reclusive algorithm that searches every vertices in a graph or data tree. 
 In this code, it goes up and down until it hits the goal node. 
+The cost of this path ends up being 78, and that is not the most optimal or shortest. 
 
 #### A*
 The main task and motivation for the A* search algorithm is to find the shortest path from start to goal. 
