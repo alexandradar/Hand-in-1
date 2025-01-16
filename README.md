@@ -55,7 +55,7 @@ Here you choose between using A* or DFS and set the start and goal position
 
 ```python
 
-algorithm_choice = "A*" # "DFS"
+algorithm_choice = "A*" #  or write "DFS"
 
 start_position = (0, 1) 
 goal_position = (7, 4)
