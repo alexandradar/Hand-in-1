@@ -8,10 +8,10 @@ This Python script provides a simple framework to visualize and compute paths ac
 
 
 ## Features
-#### Create terrain
+#### Create terrain (create_terrain_table)
 This part of the code, creates a grid terrain that takes in account the costum values for the table.
 
-#### Print out terrain
+#### Print out terrain (print_terrain_table)
 Here the it maps the numeric values for the different colors and prints out a readable table representation of the terrain grid. 
 
 Where the colors and the cost are:
@@ -19,7 +19,7 @@ Where the colors and the cost are:
 - Green: Cost = 2
 - Red: Cost = 10
 
-#### Plot terrain
+#### Plot terrain (plot_terrain)
 Here it uses matplotlib to visualize the table with the colors and the corresponding values. 
 Blue circles is also added to mark the path that it takes and the grid between the blocks.
 Futher down the costum table is made with the value of each block.
@@ -38,7 +38,7 @@ In this code, it goes up and down until it hits the goal node.
 #### A*
 The main task and motivation for the A* search algorithm is to find the shortest path from start to goal. 
 Here it finds the shortest path that equals to 10.
-#### Heuristic function:
+#### Heuristic function: 
 The Heuristic function that is being used here is the Manhattan Distance. 
 
 #### Visualization:
@@ -58,8 +58,13 @@ Here you choose between using A* or DFS and set the start and goal position
 algorithm_choice = "A*" # "DFS"
 
 start_position = (0, 1) 
-goal_position = (7, 4)   
+goal_position = (7, 4)
 
+if algorithm_choice == "DFS":
+    path = dfs(terrain_values, start_position, goal_position)
+elif algorithm_choice == "A*":
+    path = a_star(terrain_values, start_position, goal_position)
+  
 ````
 ## How to use
 The way to use the this program is by opening main.py and the change to which algorithm you want to use and the run then program. 
