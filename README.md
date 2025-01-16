@@ -61,8 +61,8 @@ start_position = (0, 1)
 goal_position = (7, 4)   
 
 ````
-#### How to use
-
+## How to use
+The way to use the this program is by opening main.py and the change to which algorithm you want to use and the run the program. 
 
 
 
