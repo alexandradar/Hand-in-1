@@ -36,11 +36,6 @@ This is a reclusive algorithm that searches every vertices in a graph or data tr
 In this code, it goes up and down until it hits the goal node. 
 The cost of this path ends up being 78, and that is not the most optimal or shortest. 
 
-It will end up looking like this:
-<h1> Path with DFS </h1>
-<img src= "Skjermbilde 2025-01-13 kl20.21.46.png">
-
-
 #### A*
 The main task and motivation for the A* search algorithm is to find the shortest path from start to goal. 
 Here it finds the shortest path that equals to 10.
@@ -51,7 +46,6 @@ The Heuristic function that is being used here is the Manhattan Distance.
 Before it all gets plotet. It is possible to choose which algorithm you want to use by changing between A* or DFS, and choose the start position and the goal position. 
 
 At the end the table gets plotet with the colors, values and the path. 
-
 
 
 
@@ -74,6 +68,8 @@ elif algorithm_choice == "A*":
 ````
 ## How to use
 The way to use the this program is by opening main.py and the change to which algorithm you want to use and the run then program. 
+
+It will plot the path it takes. It will also print out the location of the nodes it will go through and the total cost of the path.
 
 
 
